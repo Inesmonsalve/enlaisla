@@ -145,14 +145,14 @@ h4{
     width: 30vw;
     padding: 5px;
     margin: 30px ;
-    background-color: #a2b393c7;
+    /* background-color: #a2b393c7; */
+    background-image: linear-gradient(to top, #b7c7a9, #bbbfa1, #d2cbb1, #e6d8c5, #f7e6da);
     border-radius: 10px; 
-    
 }
 .bienvenidos h1{
     font-size: 30px;
     font-weight: bold;
-    color: white;
+    color: #6a8976;
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
@@ -184,13 +184,13 @@ h4{
 
 .tituloSeccion{
     height: 90px;
-    background-color: #a2b393;
+    background-image: linear-gradient(to right top, #a2b393, #b7bfa3, #caccb5, #dbdac9, #ebe8dd);
     padding: 10px;
     padding-top: 50px;
     margin: 20px 0px; 
     text-align: center;
-
 }
+
 .tituloSeccion a {
     float: right;
     font-size: 25px;
@@ -228,12 +228,23 @@ h4{
     padding: 10px;
     border-radius: 10px;
     margin: 150px 50px;
+    transition: 1.5s;
+}
+.historiaIsla:hover{
+    height: 450px;
+    width: 350px;
 }
 .historiaIsla h3{
     text-align: center;
     font-weight: bold;
     font-size: 25px;
     padding: 20px;
+}
+.historiaIsla p{
+    transition: 1.5s;
+}
+.historiaIsla p:hover{
+    font-size: 20px;
 }
 
 /* vista mobile para pagina en la isla (sobre nosotros) */
@@ -259,13 +270,12 @@ h4{
     }
 }
 
-
 /* estilos para pagina de consultas */
 
 .consultas{
     height: 500px;
     width: 100vw;
-    background-color: #e9d4c48c;  
+    background-color: #e9d4c48c; 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -293,7 +303,6 @@ h4{
     color: #6a8976;
     
 }
-
 /* vista mobile para pagina de consultas  */
 @media only screen and (max-width:320px) 
 {
@@ -335,11 +344,19 @@ h4{
     padding: 25px;
     border: 3px;
     margin: 30px 120px;
+    transition: 2s;
 }
 .cajaProductos img{
     width: 250px;
     padding: 10px;
     margin: 5px;
+    transition: 2s;
+}
+ .cajaProductos:hover{
+   width: 350px;
+} 
+.cajaProductos img:hover{
+    width: 320px;
 }
 .cajaProductos h4{
     text-align: center;
@@ -358,7 +375,9 @@ h4{
     width: 90px;
     padding: 3px;
     margin: 3px 95px;
-  
+}
+.cajaProductos button:hover{
+    width: 100px;
 }
 
 /* Vista para mobile de pagina de productos  */
@@ -400,6 +419,9 @@ h4{
     font-size: 20px;
     text-align: center;
     text-decoration: double;
+}
+.contacto input:focus{
+    color: #6a8976;
 }
 .contacto label{
      padding: 5px;
