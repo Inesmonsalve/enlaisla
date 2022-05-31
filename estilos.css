@@ -16,9 +16,6 @@ header{
     padding: 5px; 
 
 } 
-.barraNavegacion{
-    margin: 5px;
-}
 
 footer{
     background-color: #a2b393;
@@ -276,72 +273,29 @@ h2{
 
 }
 
-/* estilo de pagina de productos  */
+/* estilos de pagina de productos*/
 
 .productos{
-    display: grid;
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(2, 300px);
-    height: 800px;
-    background-color: #e9d4c48c;
+    height: max-content;
 }
-.cajaProductos{
-    height: 380px;
-    width: 270px;
-    padding: 25px;
-    border: 3px;
-    margin: 30px 120px;
-    transition: 2s;
-}
-.cajaProductos img{
-    width: 250px;
+.cp{
+    margin: 20px;
+    margin-left: 25px;
     padding: 10px;
-    margin: 5px;
-    transition: 2s;
-}
- .cajaProductos:hover{
-   width: 350px;
-} 
-.cajaProductos img:hover{
-    width: 320px;
-}
-.cajaProductos h4{
     text-align: center;
-    font-size: 12px;
-    padding: 5px;
-} 
-
-.cajaProductos h5{
-    text-align: center;
-    font-size: 9px;
-    color: #6a8976;
+}
+.cp img{
+ width: 250px;
+ margin-left: 65px;
+ margin-top: 5px;
 
 }
-.cajaProductos button{
-    height: 25px;
-    width: 90px;
-    padding: 3px;
-    margin: 3px 95px;
+.cp h2{
+    font-size: 20px;
 }
-.cajaProductos button:hover{
-    width: 100px;
-}
-
-/* Vista para mobile de pagina de productos  */
-
-@media only screen and (max-width:320px) 
-{
-    .productos{
-        height: max-content;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    .cajaProductos{
-        width: 250px;
-        margin: 2px 6px;
-        padding-top: 2px;
-    }
+.btn{
+background-color: #e9d4c48c;
+font-size: 15px;
 }
 
 /* css de Contacto */
