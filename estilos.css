@@ -262,25 +262,3 @@ font-size: 15px;
     margin-right: 100px;
     margin-left: 100px;
 }
-
-@media only screen and (max-width:320px)
-{
-.formulario{ 
-    height: 950px;
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin-top: 50px;
-}
-.contacto{
-    height: max-content;
-    width: 250px;
-    border-radius: 20px;
-    margin: 5px;
-     font-size: small; 
-}
-.contacto input{
-    font-size: 10px;
-}
-}
