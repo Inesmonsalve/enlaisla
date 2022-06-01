@@ -14,9 +14,7 @@ header{
     font-size: 20px;
     font-weight: bold;
     padding: 5px; 
-
 } 
-
 footer{
     background-color: #a2b393;
     display: grid;
@@ -194,7 +192,7 @@ h2{
     font-size: 20px;
 }
 /* vista mobile para pagina en la isla (sobre nosotros) */
-@media only screen and (min-width:320px) and (max-width:767px)
+ @media only screen and (min-width:320px) and (max-width:767px)
 {
     .sobreNosotros{
         display: flex;
@@ -204,75 +202,23 @@ h2{
         align-content: center;
     }
    }
-   @media only screen and (min-width:768px) and (max-width:1024px) 
-   {
-.sobreNosotros{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 5px;
-    width: auto;
-}
- }
-/* estilos para pagina de consultas */
 
+/* estilos para pagina de consultas */
 .consultas{
-    height: 500px;
-    width: 100vw;
-    background-color: #e9d4c48c; 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    height: max-content;
 }
 .imgConsultas{
-    grid-column: 1/2;
-    align-items: center;
-    margin: 100px;
-    padding: 0px;
-   
+     margin-top: 10px;
+     margin-bottom: 30px;
+     padding: 10px;
+
 }
 .cajaConsultas{
-    grid-column: 2/3;
-    height: 300px; 
-    width: 400px;
-    padding: 25px;
-    margin: 50px;
-    background-color: rgba(255, 255, 255, 0.592);
-    border-radius: 10px; 
-
+    width: 300px;
+    height: max-content;
+    margin-top: 100px;
+    margin-left: 20px;
 }
-.cajaConsultas button{
-    height: auto;
-    width: 100px;
-    border-radius: 4px;
-    color: #6a8976;
-    
-}
-/* vista mobile para pagina de consultas  */
-@media only screen and (max-width:320px) 
-{
-    .consultas{
-        height: max-content;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
-    .imgConsultas{
-        width: 300px;
-        margin: 10px;
-    }
-    .imgConsultas img{
-        width: 280px;
-        margin: 10px;
-    }
-    .cajaConsultas{
-      
-        height: max-content; 
-        width: 200px;
-        margin: 30px;
-    }
-
-}
-
 /* estilos de pagina de productos*/
 
 .productos{
@@ -299,46 +245,26 @@ font-size: 15px;
 }
 
 /* css de Contacto */
-
-.formulario{ 
-    width: 100%;
-    display: flex;
-}
 .contacto{
-    height: 500px;
-    width: 400px;
-    background-color: #e9d4c48c;
-    padding: 25px;
-    border-radius: 20px;
-    margin: 20px 150px;
+ height: 500px;
+ width: 100vw;
+ margin-right: 450px;
+ margin-left: 450px;
+ margin-top: 100px;
 }
 .contacto input{
+    width: 400px;
+    padding: 5px;
     background-color: #e9d4c48c;
-    padding: 3px;
-    border-radius: 6px;
-    margin: 3px;
-    font-size: 20px;
-    text-align: center;
-    text-decoration: double;
+    border-radius: 20px;
 }
-.contacto input:focus{
-    color: #6a8976;
-
-}
-.contacto label{
-     padding: 5px;
+.contacto select{
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
-.contacto h2{
-    font-size: 25px;
-    color: #6a8976;
-    padding-bottom: 7px;
-    text-align: center;
-    font-weight: bold;
-}
-
-/* vista para mobile de contacto */
-@media only screen and (max-width:320px){
+@media only screen and (max-width:320px)
+{
 .formulario{ 
     height: 950px;
     width: 250px;
@@ -350,13 +276,9 @@ font-size: 15px;
 .contacto{
     height: max-content;
     width: 250px;
-    background-color: #e9d4c48c;
     border-radius: 20px;
     margin: 5px;
-    font-size: small;
-}
-.contacto textarea{
-    width: 230px;
+     font-size: small; 
 }
 .contacto input{
     font-size: 10px;
