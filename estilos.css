@@ -69,7 +69,6 @@ h2{
 {
     footer{
         height: max-content;
-        background-color: #a2b393;
     }
     .elementosFooter{
         height: max-content;
@@ -129,6 +128,51 @@ h2{
     font-size: 25px;
     color: #143a23;
 }
+.fiestas{
+    height: 600px;
+    background-color: #e9d4c48c;
+    background-image: url(./Recursos/Logo\ eli\ 2\ \(2\).png);
+    background-size: 200px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center; 
+}
+
+.cajaFiestas img{
+    width: 350px;
+    margin-left: 50px;
+    transition: 1.5s;
+}
+.cajaFiestas img:hover{
+    width: 400px;
+}
+.titulo{
+    height: 80px;
+    margin: 5px;
+    padding: 20px;
+    background-color: #a2b393;
+}
+.titulo h2{
+    font-size: 20px;
+    font-weight: bold;
+    color: #143a23;
+    animation-name: efecto;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes efecto{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  }
+}
+
 @media only screen and (min-width:320px) and (max-width: 1024px)
 {
         .bienvenidos{  
@@ -137,7 +181,26 @@ h2{
         }
         .bienvenidos p{
             width: 65vw; 
-        }   
+          }
+        .fiestas{
+            height: max-content;
+            display: grid;
+            grid-template-columns: max-content;
+            grid-template-rows: repeat(3, 1fr); 
+        }
+        .cajaFiestas{
+            margin-left: 0;
+            margin-top: 35px;
+            height: 300px;
+            
+        }
+        .cajaFiestas img{
+            width: 280px;
+            transition: 1.5s;
+        }
+        .cajaFiestas img:hover{
+            width: 300px;
+        }
     }
 
 /* estilo general para titulo de las secciones */
@@ -148,6 +211,25 @@ h2{
     padding: 10px;
     margin-top: 30px;
     text-align: center;
+    animation-name: titulo;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+}
+@keyframes titulo{
+    0%{
+        width: 300px
+    }
+    30%{
+        background-color: #a2b393b8
+    }
+    50%{
+        background-color:#e9d4c48c ;
+    }
+    100%{
+        background-color: #a2b393;
+        width: 100vw;
+    }
 }
 .tituloSeccion h1{
      font-size: 25px; 
